@@ -1,0 +1,102 @@
+﻿<!doctype html>
+<meta charset=utf-8>
+<title>Главная страница</title>
+<link href="app.css" rel="stylesheet">
+
+
+
+<header>
+    <span class="header-left"><span class="menu-ico"><img src="menu_ico.png"></span>АИС «Одно окно»</span>
+	<div class="sidebar-header" id="sidebar-header"> 
+			
+		 <div id="user_name">Истомин Сергей Владимирович</div>
+		  <div class="fade"></div>  
+	<div id="avatar-sidebar" >	<img src="avatar.png" onclick="toggle_sidebar();"> </div>	 
+
+	 	</div>
+<div id="background-gradiet-sidebar">
+    <a id="avatar" href="" onclick="toggle_sidebar();"><img src="avatar.png"></a> 
+    </div>
+</header>
+<section>
+  <h1 class="asking-title">ВЫБЕРИТЕ ТИП ОБРАЩЕНИЯ</h1>
+  
+  <div class="asking-types-holder">
+<a class="asking-type" href="#" style="background: url(type_1.png);">
+<!-- <img src="type_1.png"> -->
+	<div class="transbox">
+		 <p class="asking-title">Новое обращение</p>
+		 <p class="asking-hint"></p>
+	</div>
+	</a>
+<a class="asking-type" href="#" style="background: url(type_2.png);">
+	<div class="transbox">
+		 <p class="asking-title">Донесение документов</p>
+		 <p class="asking-hint">Редактирование ранее оформленного заявления</p>
+	</div>
+	</a>
+<a class="asking-type" href="#" style="background: url(type_3.png);">
+	<div class="transbox">
+		 <p class="asking-title">Консультация</p>
+		 <p class="asking-hint"></p>
+	</div>
+	</a>
+<a class="asking-type" href="#" style="background: url(type_4.png);">
+	<div class="transbox">
+		 <p class="asking-title">Архив заявок</p>
+		 <p class="asking-hint"></p>
+	</div>
+	</a>
+</div>
+
+
+
+<sidebar id="sidebar" class="sidebar">
+	<div id="account" class="inactive">
+	Личный кабинет 
+	<ul id="accountUl" class="invisible">	
+	<div class="triangle"></div>
+	</ul>
+
+	<div id="queue" class="active">
+	Управление очередью 
+	<ul id="queueUl">
+	<div class="triangle"></div>
+		<li class="sidebar-link"><a href="#">Вызвать следующий талон</a></li>
+		<li class="sidebar-link"><a href="#">Отложить текущий талон</a></li>
+		<li class="sidebar-link"><a href="#">Перерыв</a></li>
+		<li class="sidebar-link"><a href="#">Выйти с перерыва</a></li>
+		<li class="sidebar-link"><a href="#">Вызвать по номеру</a></li>
+		<li class="sidebar-link"><a href="#">Посетитель подошел</a></li>
+		<li class="sidebar-link"><a href="#">Повторный вызов</a></li>
+		<li class="sidebar-link"><a href="#">Переназначить талон</a></li>
+		<li class="sidebar-last"><a href="#">Выйти из системы ЭО</a></li>
+	</ul>
+
+	<div id="item3" class="inactive">
+	
+	Пункт 3 
+	</div>
+	<ul id="item3Ul" class="invisible">
+	<div class="triangle"></div>
+	</ul>
+	
+<hr>
+
+</sidebar>
+</section>
+<footer>
+    <span class="footer-left"> 
+   
+        <p>360000, КБР, г. Нальчик, ул. Хуранова, 9</p>
+        <p>Единый социальный телефон:</p>
+        <p>8 800 100 32 82</p>
+ 
+    </span> 
+    <div class="footer-right">
+    	<p>Тел: +7 (8662) 42-10-21, 42-09-15;</p>
+    	<p>Факс: +7 (8662) 47-76-72, 42-56-00</p>
+    	<p>e-mail: gbu@mail.mfckbr.ru</p>
+	</div>
+<script src="app.js"></script>
+</footer>
